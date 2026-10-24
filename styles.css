@@ -309,8 +309,20 @@
 .credential-item>div>span{margin-top:4px;color:#576973;font-size:9px}
 .credential-item a{width:fit-content;margin-top:4px;color:#526f79;font-size:9px;text-decoration:underline;text-underline-offset:2px}
 .credential-item a span{margin-left:3px}
+.credential-list{margin-top:22px;padding:0 16px 4px;background:#fff;border:1px solid #dbe2e5;border-left:3px solid #85515d;box-shadow:0 10px 26px #24384a0a}
+.credential-list-label{padding:15px 0 8px;font-size:9px;color:#687780}
+.credential-item{grid-template-columns:56px minmax(0,1fr);gap:13px;padding:13px 0}
+.credential-initial{min-height:42px;font-size:9px}
+.credential-item strong{font-size:12px}
+.credential-item small{font-size:9px}
+.credential-item>div>span,.credential-item a{font-size:10px}
+.credential-featured{margin:0 -8px;padding:15px 8px;background:linear-gradient(100deg,#f6f1f2,#fff 70%);border-bottom-color:#d5c4c8}
+.credential-featured .credential-initial{min-height:52px;background:#85515d;border-color:#85515d;color:#fff;font-size:10px}
+.credential-featured strong{font-size:14px;color:#253b4b}
+.credential-featured small{font-size:9px;color:#715b61}
+.credential-featured>div>span{font-size:10px;color:#4e626e}
 .megasat-image-link img{height:230px;object-fit:contain;background:#f7f8f7}
-@media(max-width:700px){.propagator-window-body{grid-template-columns:minmax(0,1fr)}.propagator-sidebar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:8px}.propagator-field{display:grid;grid-template-rows:auto auto auto;gap:3px;min-width:0}.propagator-sidebar .ui-label{margin:0}.propagator-sidebar b{font-size:8px}.propagator-sidebar i{margin:0;font-size:7px}.propagator-map-stage{aspect-ratio:1.6;min-height:145px}.art-mission .mission-trajectory-image{width:calc(100% - 24px);max-height:160px;margin-top:26px}.credential-item{grid-template-columns:42px minmax(0,1fr);gap:9px}.megasat-image-link img{height:260px}}
+@media(max-width:700px){.propagator-window-body{grid-template-columns:minmax(0,1fr)}.propagator-sidebar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:8px}.propagator-field{display:grid;grid-template-rows:auto auto auto;gap:3px;min-width:0}.propagator-sidebar .ui-label{margin:0}.propagator-sidebar b{font-size:8px}.propagator-sidebar i{margin:0;font-size:7px}.propagator-map-stage{aspect-ratio:1.6;min-height:145px}.art-mission .mission-trajectory-image{width:calc(100% - 24px);max-height:160px;margin-top:26px}.credential-list{padding-inline:12px}.credential-item{grid-template-columns:46px minmax(0,1fr);gap:9px}.credential-featured strong{font-size:13px}.megasat-image-link img{height:260px}}
 
 /* TripTrip product composition: real sign-in capture plus a clearly labelled concept itinerary. */
 .work-card-triptrip .work-card-art{min-height:0;padding:18px;background:linear-gradient(145deg,#e8edef,#f6f8f8)}
