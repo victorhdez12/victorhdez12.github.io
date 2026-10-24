@@ -301,6 +301,10 @@
 .credential-list-label{padding:12px 0 5px;color:#74818a;font:8px var(--mono);letter-spacing:.12em}
 .credential-item{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:start;gap:11px;padding:11px 0;border-bottom:1px solid #dce3e6;min-width:0}
 .credential-initial{display:grid;place-items:center;min-height:34px;background:#e8eef0;border:1px solid #d5dfe2;color:#334d5b;font:700 8px var(--mono);letter-spacing:.04em}
+.credential-logo{display:grid;place-items:center;align-self:start;min-width:0;height:42px;padding:5px;background:#fff;border:1px solid #d7e0e3}
+.credential-logo img{display:block;width:auto;max-width:100%;height:auto;max-height:30px;object-fit:contain}
+.credential-logo-cfi img{width:88px;max-width:100%;height:auto;max-height:31px;object-fit:contain}
+.credential-logo-powerbi img{width:34px;height:34px;max-width:34px;max-height:34px;object-fit:contain}
 .credential-powerbi{background:#f3efe3;border-color:#e6ddc1;color:#776535}
 .credential-excel{background:#e8f0ea;border-color:#d2e0d5;color:#42664d}
 .credential-item strong,.credential-item small,.credential-item>div>span,.credential-item a{display:block}
@@ -318,11 +322,13 @@
 .credential-item>div>span,.credential-item a{font-size:10px}
 .credential-featured{margin:0 -8px;padding:15px 8px;background:linear-gradient(100deg,#f6f1f2,#fff 70%);border-bottom-color:#d5c4c8}
 .credential-featured .credential-initial{min-height:52px;background:#85515d;border-color:#85515d;color:#fff;font-size:10px}
+.credential-featured .credential-logo{height:52px;padding:7px}
+.credential-featured .credential-logo-cfi img{width:90px;max-width:100%;max-height:35px}
 .credential-featured strong{font-size:14px;color:#253b4b}
 .credential-featured small{font-size:9px;color:#715b61}
 .credential-featured>div>span{font-size:10px;color:#4e626e}
 .megasat-image-link img{height:230px;object-fit:contain;background:#f7f8f7}
-@media(max-width:700px){.propagator-window-body{grid-template-columns:minmax(0,1fr)}.propagator-sidebar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:8px}.propagator-field{display:grid;grid-template-rows:auto auto auto;gap:3px;min-width:0}.propagator-sidebar .ui-label{margin:0}.propagator-sidebar b{font-size:8px}.propagator-sidebar i{margin:0;font-size:7px}.propagator-map-stage{aspect-ratio:1.6;min-height:145px}.art-mission .mission-trajectory-image{width:calc(100% - 24px);max-height:160px;margin-top:26px}.credential-list{padding-inline:12px}.credential-item{grid-template-columns:46px minmax(0,1fr);gap:9px}.credential-featured strong{font-size:13px}.megasat-image-link img{height:260px}}
+@media(max-width:700px){.propagator-window-body{grid-template-columns:minmax(0,1fr)}.propagator-sidebar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:8px}.propagator-field{display:grid;grid-template-rows:auto auto auto;gap:3px;min-width:0}.propagator-sidebar .ui-label{margin:0}.propagator-sidebar b{font-size:8px}.propagator-sidebar i{margin:0;font-size:7px}.propagator-map-stage{aspect-ratio:1.6;min-height:145px}.art-mission .mission-trajectory-image{width:calc(100% - 24px);max-height:160px;margin-top:26px}.credential-list{padding-inline:12px}.credential-item{grid-template-columns:46px minmax(0,1fr);gap:9px}.credential-logo{height:40px;padding:4px}.credential-logo-cfi img{width:78px;max-width:100%}.credential-logo-powerbi img{width:30px;height:30px;max-width:30px;max-height:30px}.credential-featured .credential-logo{height:48px}.credential-featured strong{font-size:13px}.megasat-image-link img{height:260px}}
 
 /* TripTrip product composition: real sign-in capture plus a clearly labelled concept itinerary. */
 .work-card-triptrip .work-card-art{min-height:0;padding:18px;background:linear-gradient(145deg,#e8edef,#f6f8f8)}
@@ -383,6 +389,10 @@
 .hero-lede{max-width:560px}
 .hero-capability-line{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:23px;color:#d6e0e4;font:8px var(--mono);letter-spacing:.07em;text-transform:uppercase}
 .hero-capability-line i{display:block;width:4px;height:4px;border-radius:50%;background:#ad7c82}
+.hero-employer-proof{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:20px;color:#dce4e7}
+.hero-employer-proof>span{flex-basis:100%;color:#98a9b2;font:7px var(--mono);letter-spacing:.11em}
+.hero-employer-proof strong{font:600 10px var(--display);white-space:nowrap}
+.hero-employer-proof i{width:3px;height:3px;border-radius:50%;background:#ad7c82}
 .hero-footnote{margin-top:22px;color:#a9b8c2}
 .hero-systems-visual{display:grid;grid-template-columns:.82fr 1.18fr;min-height:365px;background:#172b3b}
 .hero-earth-panel{position:relative;min-width:0;min-height:365px;overflow:hidden;background:#0b1826}
@@ -418,3 +428,26 @@
 @media(max-width:620px){.hero h1{font-size:clamp(36px,9vw,42px);line-height:1.04;max-width:18ch}.hero-systems-visual{grid-template-columns:1fr;min-height:0}.hero-earth-panel{min-height:220px;height:220px}.hero-earth-panel:after{background:linear-gradient(0deg,#172b3b60,transparent 60%)}.hero-delivery-panel{padding:14px 13px}.hero-capability-line{font-size:7px;gap:6px}.hero-finance-strip{font-size:6px}}
 @media(prefers-reduced-motion:reduce){.hero-earth-panel>img,.hero-orbit-overlay ellipse,.hero-orbit-overlay path,.hero-delivery-row{animation:none!important}.hero-delivery-row{opacity:1;transform:none}}
 @media(max-width:700px){.work-card-triptrip .work-card-art{padding:12px}.triptrip-product-body{grid-template-columns:minmax(0,1fr);gap:9px;padding:9px}.triptrip-login-figure{display:flex;width:fit-content;max-width:100%;flex-direction:column;gap:6px;align-items:center;justify-content:center;margin-inline:auto;padding:8px;background:#f2f5f5;border:1px solid #e0e6e8}.triptrip-real-preview{height:185px;margin:0}.triptrip-login-figure figcaption{align-self:center;font-size:7px}.triptrip-concept-panel{padding:10px}.triptrip-concept-title{font-size:16px}.triptrip-route-map{max-height:78px}.triptrip-concept-days{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.triptrip-concept-days>div{align-items:flex-start;padding-top:7px}.triptrip-concept-days strong{font-size:7px}.triptrip-concept-days small{font-size:6px}.triptrip-window-foot{font-size:6px}.forecast-panel{padding:10px 9px 7px}.forecast-panel-head{font-size:6px}.forecast-legend{font-size:7px}}
+
+.experience-main p+p{margin-top:12px}
+.credential-badge{display:inline-block;margin-bottom:6px;padding:3px 8px;background:#85515d;color:#fff;font:700 9px var(--mono);letter-spacing:.12em;font-style:normal}
+.credential-featured{padding:22px 14px;margin:0 -12px}
+.credential-featured .credential-logo{height:68px;padding:9px}
+.credential-featured .credential-logo-cfi img{width:100%;max-height:48px}
+.credential-featured{grid-template-columns:84px minmax(0,1fr)}
+.credential-featured strong{font-size:17px;line-height:1.3}
+.credential-featured small{font-size:10px;margin-top:5px}
+.credential-featured>div>span{font-size:12px;line-height:1.6;margin-top:8px}
+.passion-grid{list-style:none;margin:0 0 22px;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.passion-grid li{padding:16px 16px 18px;background:#fff;border:1px solid #d9e3df;border-top:3px solid var(--copper)}
+.passion-grid b{display:block;color:#7b918c;font:9px var(--mono);letter-spacing:.1em}
+.passion-grid strong{display:block;margin:6px 0 4px;color:#233940;font:600 15px/1.3 var(--display)}
+.passion-grid span{display:block;color:#50646a;font-size:12px;line-height:1.6}
+@media(max-width:900px){.passion-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.passion-grid{grid-template-columns:1fr}}
+
+.lang-block{margin-top:22px;padding-top:6px;border-top:1px solid #d6dfe2}
+.lang-list{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px}
+.lang-list li{display:flex;justify-content:space-between;gap:12px;font-size:13px}
+.lang-list strong{font:600 13px var(--display);color:#233940}
+.lang-list small{color:#667686;font:10px var(--mono);text-align:right}

@@ -10,3 +10,5 @@ These marks are included locally for the portfolio's employer and education stri
 - Purdue University: [Purdue University wordmark.svg](https://commons.wikimedia.org/wiki/File:Purdue_University_wordmark.svg), public domain, Purdue University.
 - UNIR: [UNIR Logo.svg](https://commons.wikimedia.org/wiki/File:UNIR_Logo.svg), public domain, source attribution UNIR.
 - Aernnova: official logo downloaded from [Aernnova's website](https://www.aernnova.com/).
+- CFI: official Corporate Finance Institute wordmark downloaded from [CFI](https://corporatefinanceinstitute.com/).
+- Power BI: [New Power BI Logo.svg](https://commons.wikimedia.org/wiki/File:New_Power_BI_Logo.svg), public domain, source attribution Nonodename.
