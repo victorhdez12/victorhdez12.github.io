@@ -1,10 +1,10 @@
 # English design prompt — Victor Hernández Megía portfolio
 
-Act as a senior digital art director, brand designer and front-end engineer. Refine the existing static portfolio for **Victor Hernández Megía** into a premium, corporate, editorial website for an aerospace engineer and technical project manager working across space systems, mission analysis, industrial performance, MBSE, applied AI and independent software products.
+Act as a senior digital art director, brand designer and front-end engineer. Refine the existing static portfolio for **Victor Hernández Megía** into a premium, corporate, editorial website for an aerospace programme / technical project manager working across space systems, systems engineering, AI-enabled engineering, programme controls and independent products. The portfolio should suit applications across space, aerospace and defence organisations, including agencies, primes and systems integrators.
 
 ## Core objective
 
-Do not create a conventional CV website. Make it feel like a thoughtful engineering/product portfolio with concise narratives, selected case studies, visual evidence and a clear point of view. A recruiter or technical leader should understand in 30 seconds that Victor has a real aerospace and astrodynamics foundation, can lead delivery across teams, and independently builds useful software and data products.
+Do not create a conventional CV website. Make it feel like a thoughtful programme-leadership and engineering portfolio with concise narratives, selected case studies, visual evidence and a clear point of view. A recruiter or technical leader should understand in 30 seconds that Victor has an aerospace and astrodynamics foundation, can lead cross-functional programmes, connect systems engineering with AI, manage scope/schedule/cost/risk/resources, support investment and business-case decisions, and independently builds useful software and data products.
 
 ## Art direction
 
@@ -17,7 +17,7 @@ Do not create a conventional CV website. Make it feel like a thoughtful engineer
 
 ## Content hierarchy
 
-1. **Hero:** a strong, non-generic line about building at the intersection of complex engineering, delivery and practical AI. No long personal summary. Include concise calls to action for selected work and contact.
+1. **Hero:** foreground programme leadership for aerospace systems, Systems + AI, business cases and programme controls. Use a clear headline, concise positioning and an editorial systems-delivery visual; avoid implying that conceptual dashboard elements are live programme data. Include concise calls to action for selected work and contact.
 2. **Point of view:** explain the through-line in Victor's work—understanding complex systems, coordinating delivery and turning repetitive work into useful tools.
 3. **Selected case studies** (the heart of the site; make them visual and editorial rather than a list of responsibilities):
    - **OHB — Engineering automation and MBSE + AI:** current technical project-management work, AI-enabled AIT automation, enterprise MBSE + AI, local-first LLM/agent workflows, AI roadmap and ESA proposal support. Keep company project information high-level and non-confidential.
@@ -52,7 +52,7 @@ Avoid repeating the same card design across projects. Give each featured case st
 - TripTrip: a warm map-and-itinerary product mockup showing a shared group plan, AI-assisted itinerary creation and Supabase-backed collaboration. Do not expose private source code.
 - Orbital pass predictor: a technical satellite-tracking dashboard with an area-of-interest outline, ground track and TLE/SGP4 labels.
 - Research: use actual first-page PDF previews from public repositories where embedding is supported, with clear links to the source. A designed cover must be labelled as a designed preview, never presented as a scan of a real paper.
-- IAC MegaSat: use the original conference-paper PDF preview when supplied by the owner; until then, keep a clearly labelled designed preview.
+- IAC MegaSat: use the supplied original conference paper's first-page crop at `assets/projects/megasat-paper-cover.png`; do not replace it with a designed cover.
 - IAC photography: use only the real owner-provided photograph.
 
 Make section boundaries more explicit through alternating background tones, thin chapter-color rules, whitespace and section-specific layouts. Use scroll reveals and hover transitions sparingly, with reduced-motion support.
@@ -62,6 +62,6 @@ Make section boundaries more explicit through alternating background tones, thin
 
 - Treat the first-author *Acta Astronautica* paper on Apophis as the principal research credential and visually dominant publication. Use the local full first-page thumbnail `assets/acta-apophis-first-page.jpg` and the supplied-paper figure crops `assets/acta-apossum-mission-scenario.jpg` and `assets/acta-apophis-landing-trajectory.jpg`. Do not replace these with generic asteroid illustrations.
 - Present the paper’s 5,000 Monte Carlo cases, 99.96% reported success rate, and 0.99 m average position error only with context explaining these are results from the study’s simulation setup and success criteria.
-- Use `assets/imagen_megasat.jpg` as an intentionally replaceable local image slot for the MegaSat paper / IAC 2024 artifact. Keep the filename and path stable; the owner will replace the image locally.
+- Use the original MegaSat paper crop at `assets/projects/megasat-paper-cover.png` as the IAC 2024 research artifact.
 - The supplied APOSSUM / Apophis T-5 poster may appear as a secondary research artifact, but must not visually compete with the Acta Astronautica feature.
 - Keep the visible publication title, author order, journal volume/pages, DOI and claims consistent with the supplied PDF.

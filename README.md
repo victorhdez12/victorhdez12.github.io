@@ -40,7 +40,7 @@ Connect this folder/repository to Cloudflare Pages, leave the build command empt
 
 
 ## Research preview assets
-The Acta Astronautica article and Cranfield MSc thesis use embedded previews of public PDF sources. The site includes designed fallbacks for browsers that do not display embedded PDFs. MegaSat currently uses a clearly labelled designed miniature cover because the original proceedings PDF was not supplied; replace the cover with an owner-provided PDF preview when available. Add the original IAC Milan photograph as `assets/iac-milan-photo.jpg` when ready.
+The Acta Astronautica article and Cranfield MSc thesis use embedded previews of public PDF sources. The MegaSat card uses a local crop of the supplied IAC 2024 paper's first page. The education section lists the FMVA certificate and verified Microsoft/Coursera courses in Power BI and Excel. Add the original IAC Milan photograph as `assets/iac-milan-photo.jpg` when ready.
 
 ## Security note
 Never commit API keys, passwords, cookies, private URLs or employer-confidential material. Keep secrets in local environment files excluded from Git.
@@ -50,11 +50,15 @@ Never commit API keys, passwords, cookies, private URLs or employer-confidential
 
 The Acta Astronautica first-page preview and two scientific figures are bundled in `assets/` and are sourced from the supplied open-access article (CC BY 4.0). The research card uses local images so it does not depend on a browser being able to embed a remote PDF.
 
-### Replace the MegaSat image
+### Research and project images
 
-Replace `assets/imagen_megasat.jpg` with your own MegaSat conference-paper cover, PDF screenshot, or relevant IAC photograph. Keep the exact filename and folder path. The page will pick up the new image automatically; no HTML edits are required. The included image is only a placeholder.
+- `assets/projects/megasat-paper-cover.png` is rendered from the supplied MegaSat conference paper.
+- `assets/projects/apophis-proximity-trajectories.png` is a plot from Victor's Apophis research files.
+- `assets/projects/earth-eastern-hemisphere.jpg` is public-domain Earth imagery used under a conceptual satellite-track overlay. The tracks are schematic, not computed results.
+- `assets/projects/README.md` lists project-image sources.
+- `assets/logos/README.md` lists logo sources and attribution.
 
-Optional: replace the separate conference-photo artwork in the IAC card when you have an event photograph. It is separate from the MegaSat image slot.
+The optional IAC conference-photo artwork is separate; add the original photo at `assets/iac-milan-photo.jpg` when available.
 
 ## Free hosting
 
