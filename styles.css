@@ -514,3 +514,6 @@
 .a2-figure{margin:0;max-width:330px;padding:12px 12px 9px;background:#fff;border-radius:4px;box-shadow:0 18px 40px #0006}.a2-figure img{display:block;width:100%;height:auto}.a2-figure figcaption{margin-top:6px;color:#55666e;font:8px var(--mono);text-align:center}
 @media(max-width:800px){.work-card-large .art2,.work-card-featured .art2{min-height:260px;border-right:0;border-bottom:1px solid #ffffff18}}
 .a2-start,.a2-start text{text-anchor:start}.a2-chip+.a2-ts text,.a2-ts text{font-size:8.5px}
+.work-divider{grid-column:1/-1;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:14px 0 2px;padding-bottom:12px;border-bottom:1px solid #ffffff22}.work-divider:first-child{margin-top:0}.work-divider span{color:var(--copper);font:600 11px var(--mono);letter-spacing:.16em}.work-divider small{color:#93a6b3;font-size:12px}
+.origin-badge{position:absolute;right:16px;top:12px;z-index:1;padding:4px 9px;border-radius:12px;font:8px var(--mono);letter-spacing:.1em}.origin-work{background:#dca4771f;border:1px solid #dca47788;color:#f0c9a5}.origin-own{background:#6eabb01f;border:1px solid #7ad6cb77;color:#a6e3dc}
+@media(max-width:620px){.origin-badge{left:18px;right:auto;top:34px}.work-card .art2{padding-top:64px}.work-divider{grid-column:1}}
