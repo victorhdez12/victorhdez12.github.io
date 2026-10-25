@@ -52,7 +52,7 @@ Avoid repeating the same card design across projects. Give each featured case st
 - TripTrip: a warm map-and-itinerary product mockup showing a shared group plan, AI-assisted itinerary creation and Supabase-backed collaboration. Do not expose private source code.
 - Orbital pass predictor: a technical satellite-tracking dashboard with an area-of-interest outline, ground track and TLE/SGP4 labels.
 - Research: use actual first-page PDF previews from public repositories where embedding is supported, with clear links to the source. A designed cover must be labelled as a designed preview, never presented as a scan of a real paper.
-- IAC MegaSat: use the supplied original conference paper's first-page crop at `assets/projects/megasat-paper-cover.png`; do not replace it with a designed cover.
+- IAC MegaSat: use the supplied original conference paper's first-page crop at `assets/projects/megasat-paper-cover.webp`; do not replace it with a designed cover.
 - IAC photography: use only the real owner-provided photograph.
 
 Make section boundaries more explicit through alternating background tones, thin chapter-color rules, whitespace and section-specific layouts. Use scroll reveals and hover transitions sparingly, with reduced-motion support.
@@ -60,8 +60,8 @@ Make section boundaries more explicit through alternating background tones, thin
 
 ## Latest research and asset requirements
 
-- Treat the first-author *Acta Astronautica* paper on Apophis as the principal research credential and visually dominant publication. Use the local full first-page thumbnail `assets/acta-apophis-first-page.jpg` and the supplied-paper figure crops `assets/acta-apossum-mission-scenario.jpg` and `assets/acta-apophis-landing-trajectory.jpg`. Do not replace these with generic asteroid illustrations.
+- Treat the first-author *Acta Astronautica* paper on Apophis as the principal research credential and visually dominant publication. Use the local full first-page thumbnail `assets/acta-apophis-first-page.webp` and the supplied-paper figure crops `assets/acta-apossum-mission-scenario.webp` and `assets/acta-apophis-landing-trajectory.jpg`. Do not replace these with generic asteroid illustrations.
 - Present the paper’s 5,000 Monte Carlo cases, 99.96% reported success rate, and 0.99 m average position error only with context explaining these are results from the study’s simulation setup and success criteria.
-- Use the original MegaSat paper crop at `assets/projects/megasat-paper-cover.png` as the IAC 2024 research artifact.
+- Use the original MegaSat paper crop at `assets/projects/megasat-paper-cover.webp` as the IAC 2024 research artifact.
 - The supplied APOSSUM / Apophis T-5 poster may appear as a secondary research artifact, but must not visually compete with the Acta Astronautica feature.
 - Keep the visible publication title, author order, journal volume/pages, DOI and claims consistent with the supplied PDF.
