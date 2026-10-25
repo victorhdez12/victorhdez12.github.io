@@ -27,7 +27,7 @@ Connect this folder/repository to Cloudflare Pages, leave the build command empt
 - The propagator / satellite pass project currently points to `https://github.com/victorhdez12/satellite-pass-predictor`.
 - TripTrip is described as an AI-assisted shared travel planner built with Supabase. Its source code is private, so no private repository URL is exposed.
 - Keep company project details at a non-confidential level.
-- **Security before publication:** the public `satellite-pass-predictor` repository currently has Space-Track credentials in `docker-compose.yml`. Rotate the exposed credential immediately, remove hard-coded secrets from the file, use environment variables or an untracked `.env` file, and clean the Git history if needed. Do not publish or promote the repository until this has been remediated. Never copy credentials into this portfolio.
+- **satellite-pass-predictor security:** credentials were moved out of `docker-compose.yml` into an untracked `.env` (branch `claude/lucid-feynman-3umrqd` of that repo). The old Space-Track and database passwords still exist in that repository's Git history: rotate them, and optionally purge the history. Never copy credentials into this portfolio.
 - Review your preferred contact email before making the page public.
 
 ## Editing map
@@ -36,6 +36,7 @@ Connect this folder/repository to Cloudflare Pages, leave the build command empt
 - `styles.css`: layout, responsive behaviour, transitions and motion.
 - `script.js`: mobile navigation, accessible scroll reveals and the IAC photo placeholder dialog.
 - `assets/favicon.svg`: browser icon.
+- `assets/og-image.png`: 1200×630 preview image used when the site is shared (LinkedIn, Slack, etc.).
 - `DESIGN_PROMPT.md`: English prompt for further design iterations.
 
 
@@ -52,9 +53,9 @@ The Acta Astronautica first-page preview and two scientific figures are bundled 
 
 ### Research and project images
 
-- `assets/projects/megasat-paper-cover.png` is rendered from the supplied MegaSat conference paper.
-- `assets/projects/apophis-proximity-trajectories.png` is a plot from Victor's Apophis research files.
-- `assets/projects/earth-eastern-hemisphere.jpg` is public-domain Earth imagery used under a conceptual satellite-track overlay. The tracks are schematic, not computed results.
+- `assets/projects/megasat-paper-cover.webp` is rendered from the supplied MegaSat conference paper.
+- `assets/projects/apophis-proximity-trajectories.webp` is a plot from Victor's Apophis research files.
+- `assets/projects/earth-eastern-hemisphere.webp` is public-domain Earth imagery used under a conceptual satellite-track overlay. The tracks are schematic, not computed results.
 - `assets/projects/README.md` lists project-image sources.
 - `assets/logos/README.md` lists logo sources and attribution.
 
