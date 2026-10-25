@@ -3,7 +3,7 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduceMotion && 'IntersectionObserver' in window) {
     document.documentElement.classList.add('js-ready');
-    const revealTargets = document.querySelectorAll('.section-heading, .experience-item, .work-card, .paper-feature, .research-card, .education-item, .beyond-card, .contact-card, .principle');
+    const revealTargets = document.querySelectorAll('.section-heading, .experience-item, .work-card, .work-divider, .paper-feature, .research-card, .education-item, .fit-card, .case-study, .bz-card, .contact-card');
     revealTargets.forEach((element, index) => {
       element.classList.add('reveal');
       element.style.setProperty('--reveal-delay', `${(index % 4) * 65}ms`);
@@ -17,6 +17,36 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
     revealTargets.forEach((element) => observer.observe(element));
+
+    // Hero figures count up once on load.
+    document.querySelectorAll('.hero-stats dt').forEach((el) => {
+      const match = el.textContent.match(/^(\D*)(\d+)(.*)$/);
+      if (!match) return;
+      const [, prefix, target, suffix] = match;
+      const end = Number(target);
+      const start = performance.now();
+      const duration = 1100;
+      const tick = (now) => {
+        const t = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = `${prefix}${Math.round(end * eased)}${suffix}`;
+        if (t < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }
+
+  // Highlight the navigation link of the section in view.
+  const navLinks = [...document.querySelectorAll('.primary-nav a[href^="#"]')];
+  const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length) {
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`));
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach((section) => navObserver.observe(section));
   }
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.primary-nav');
