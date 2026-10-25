@@ -25,7 +25,7 @@ Connect this folder/repository to Cloudflare Pages, leave the build command empt
 - Replace the IAC 2024 illustration placeholder with the real Milan conference photo. Place the image at `assets/iac-milan-photo.jpg` and replace the button with a `<figure>` containing an `<img>` and caption.
 - Verify the public descriptions of projects and the destination URLs before publishing.
 - The propagator / satellite pass project currently points to `https://github.com/victorhdez12/satellite-pass-predictor`.
-- TripTrip is described as an AI-assisted shared travel planner built with Supabase. Its source code is private, so no private repository URL is exposed.
+- TripTrip is a Flutter social travel app (Firebase Auth + Supabase); the card links to `https://github.com/victorhdez12/triptrip` and uses screenshots from its `docs/screenshots` folder.
 - Keep company project details at a non-confidential level.
 - **satellite-pass-predictor security:** credentials were moved out of `docker-compose.yml` into an untracked `.env` (branch `claude/lucid-feynman-3umrqd` of that repo). The old Space-Track and database passwords still exist in that repository's Git history: rotate them, and optionally purge the history. Never copy credentials into this portfolio.
 - Review your preferred contact email before making the page public.
