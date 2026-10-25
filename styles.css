@@ -484,3 +484,6 @@
 .lang-list em{margin-top:3px;font:normal 9px/1.5 var(--mono);color:#9c714d}
 .experience-date .contract-type{margin-top:44px}
 @media(max-width:540px){.lang-list{grid-template-columns:1fr}.experience-date{flex-wrap:wrap}.experience-date .contract-type{flex-basis:100%;margin:2px 0 0;text-align:right}}
+.fit-section{background:var(--white);border-bottom:1px solid var(--line)}.fit-metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:22px}.fit-metrics>div{display:flex;flex-direction:column;gap:6px;padding:16px 14px;background:#edf0eb;border-top:2px solid #c99b73;min-width:0}.fit-metrics strong{font:650 clamp(22px,2.4vw,30px)/1 var(--display);letter-spacing:-.04em;color:#173348}.fit-metrics span{font:9px/1.5 var(--mono);color:#5f706e}.fit-list{margin:0 0 16px;padding-left:16px;color:#4f5c65;font-size:13px;line-height:1.7}.fit-list li+li{margin-top:7px}.fit-list li::marker{color:var(--copper)}
+@media(max-width:900px){.fit-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:540px){.fit-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.fit-metrics>div:last-child{grid-column:span 2}}
