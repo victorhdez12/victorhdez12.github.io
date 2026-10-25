@@ -54,7 +54,7 @@ The Acta Astronautica first-page preview and two scientific figures are bundled 
 ### Research and project images
 
 - `assets/projects/megasat-paper-cover.webp` is rendered from the supplied MegaSat conference paper.
-- `assets/projects/apophis-proximity-trajectories.webp` is a plot from Victor's Apophis research files.
+- `assets/projects/apophis-trajectory-crop.webp` is a plot from Victor's Apophis research files.
 - `assets/projects/earth-eastern-hemisphere.webp` is public-domain Earth imagery used under a conceptual satellite-track overlay. The tracks are schematic, not computed results.
 - `assets/projects/README.md` lists project-image sources.
 - `assets/logos/README.md` lists logo sources and attribution.
